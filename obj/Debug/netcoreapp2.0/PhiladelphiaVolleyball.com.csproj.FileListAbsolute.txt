@@ -1,0 +1,12 @@
+/Users/danelliott/Projects/PhiladelphiaVolleyball/PhiladelphiaVolleyball.com/obj/Debug/netcoreapp2.0/PhiladelphiaVolleyball.com.csprojResolveAssemblyReference.cache
+/Users/danelliott/Projects/PhiladelphiaVolleyball/PhiladelphiaVolleyball.com/obj/Debug/netcoreapp2.0/PhiladelphiaVolleyball.com.csproj.CoreCompileInputs.cache
+/Users/danelliott/Projects/PhiladelphiaVolleyball/PhiladelphiaVolleyball.com/obj/Debug/netcoreapp2.0/PhiladelphiaVolleyball.com.AssemblyInfoInputs.cache
+/Users/danelliott/Projects/PhiladelphiaVolleyball/PhiladelphiaVolleyball.com/obj/Debug/netcoreapp2.0/PhiladelphiaVolleyball.com.AssemblyInfo.cs
+/Users/danelliott/Projects/PhiladelphiaVolleyball/PhiladelphiaVolleyball.com/bin/Debug/netcoreapp2.0/libe_sqlite3.dylib
+/Users/danelliott/Projects/PhiladelphiaVolleyball/PhiladelphiaVolleyball.com/bin/Debug/netcoreapp2.0/PhiladelphiaVolleyball.com.deps.json
+/Users/danelliott/Projects/PhiladelphiaVolleyball/PhiladelphiaVolleyball.com/bin/Debug/netcoreapp2.0/PhiladelphiaVolleyball.com.runtimeconfig.json
+/Users/danelliott/Projects/PhiladelphiaVolleyball/PhiladelphiaVolleyball.com/bin/Debug/netcoreapp2.0/PhiladelphiaVolleyball.com.runtimeconfig.dev.json
+/Users/danelliott/Projects/PhiladelphiaVolleyball/PhiladelphiaVolleyball.com/bin/Debug/netcoreapp2.0/PhiladelphiaVolleyball.com.dll
+/Users/danelliott/Projects/PhiladelphiaVolleyball/PhiladelphiaVolleyball.com/bin/Debug/netcoreapp2.0/PhiladelphiaVolleyball.com.pdb
+/Users/danelliott/Projects/PhiladelphiaVolleyball/PhiladelphiaVolleyball.com/obj/Debug/netcoreapp2.0/PhiladelphiaVolleyball.com.dll
+/Users/danelliott/Projects/PhiladelphiaVolleyball/PhiladelphiaVolleyball.com/obj/Debug/netcoreapp2.0/PhiladelphiaVolleyball.com.pdb
