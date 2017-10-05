@@ -9,10 +9,23 @@
     <Folder Include="wwwroot\css\" />
     <Folder Include="wwwroot\js\" />
     <Folder Include="wwwroot\img\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Views\" />
+    <Folder Include="Views\Shared\" />
+    <Folder Include="Views\Home\" />
+    <Folder Include="Views\About\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\about.html" />
+    <Content Remove="wwwroot\index.html" />
+    <Content Remove="Index.cshtml" />
+  </ItemGroup>
 </Project>
