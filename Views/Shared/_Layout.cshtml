@@ -1,22 +1,10 @@
 ﻿<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>
-</head>
-<body>
-    <div>
-        
-    </div>
-</body>
-</html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="/img/favicon.ico">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <style>
@@ -49,12 +37,12 @@
 
             <div class="collapse navbar-collapse" id="navbarsCollapse">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/">Events <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/about">About</a>
-                    </li>
+                    <li asp-controller="Home" asp-action="Index" class="nav-item" is-active-route="">
+						<a asp-controller="Home" asp-action="Index" class="nav-link" is-active-route="">Events</a>
+					</li>
+                    <li asp-controller="About" class="nav-item" is-active-route="">
+						<a asp-controller="About" class="nav-link" is-active-route="">About</a>
+					</li>
                 </ul>
             </div>
 
