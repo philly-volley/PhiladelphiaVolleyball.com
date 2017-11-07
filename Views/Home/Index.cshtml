@@ -2,4 +2,11 @@
 }
 
 <a class="os-iframe-link" href="https://opensports.net/iframe/6849/events">OpenSports</a>
-<script src="https://opensports.net/dist/iframe.min.js"></script>
+
+@section HeadClose {
+    <script src="//twemoji.maxcdn.com/2/twemoji.min.js?2.3.0"></script>
+}
+@section BodyClose {
+    <script src="https://opensports.net/dist/iframe.min.js" crossorigin="anonymous"></script>
+    <script>twemoji.parse(document.body);</script>
+}
