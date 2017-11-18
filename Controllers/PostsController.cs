@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace PhiladelphiaVolleyball.com.Controllers
 {
@@ -16,7 +10,7 @@ namespace PhiladelphiaVolleyball.com.Controllers
             if (string.IsNullOrWhiteSpace(id))
                 return RedirectToRoute("Home");
             else
-                return Redirect("\\\\opensports.net\\posts\\" + id);
+                return Redirect("//opensports.net/posts/" + id);
         }
     }
 }

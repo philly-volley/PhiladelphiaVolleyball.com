@@ -5,6 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Assemblies\**" />
+    <Content Remove="Assemblies\**" />
+    <EmbeddedResource Remove="Assemblies\**" />
+    <None Remove="Assemblies\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\" />
     <Folder Include="wwwroot\css\" />
     <Folder Include="wwwroot\js\" />
@@ -16,8 +23,6 @@
     <Folder Include="Views\About\" />
     <Folder Include="Helpers\" />
     <Folder Include="Helpers\TagHelpers\" />
-    <Folder Include="Assemblies\" />
-    <Folder Include="Assemblies\netstandard2.0\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,6 +34,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\about.html" />
+    <Content Remove="wwwroot\img\logo.jpg" />
+    <Content Remove="wwwroot\img\logo.svg" />
     <Content Remove="wwwroot\index.html" />
     <Content Remove="Index.cshtml" />
   </ItemGroup>
