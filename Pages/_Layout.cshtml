@@ -17,7 +17,7 @@
     <link rel="manifest" href="/img/manifest.json">
     <link rel="shortcut icon" href="/img/favicon.ico">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style>
         /* Show it is fixed to the top */
         body {
@@ -31,8 +31,13 @@
             margin: 0 .05em 0 .1em;
             vertical-align: -0.1em;
         }
+        .instagram {
+            background: #d6249f;
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+            box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+        }
     </style>
-    @RenderSection(name:"HeadClose", required:false)
+    @RenderSection(name: "HeadClose", required: false)
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color:#fff; border-bottom-style: solid; border-bottom-color: #0275D8;">
@@ -47,17 +52,20 @@
 
             <div class="collapse navbar-collapse" id="navbarsCollapse">
                 <ul class="navbar-nav mr-auto">
-                    <li asp-controller="Home" asp-action="Index" class="nav-item" is-active-route="">
-                        <a asp-controller="Home" asp-action="Index" class="nav-link" is-active-route="">Events</a>
+                    <li asp-page="/Index" class="nav-item" is-active-page="">
+                        <a asp-page="/Index" class="nav-link">Events</a>
                     </li>
-                    <li asp-controller="About" class="nav-item" is-active-route="">
-                        <a asp-controller="About" class="nav-link" is-active-route="">About</a>
+                    <li asp-page="/About" class="nav-item" is-active-page="">
+                        <a asp-page="/About" class="nav-link">About</a>
+                    </li>
+                    <li asp-page="/FAQ" class="nav-item" is-active-page="">
+                        <a asp-page="/FAQ" class="nav-link">FAQs</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav">
-                    <li><a class="twitter-follow-button" href="https://twitter.com/PhillyVolley" data-size="large" data-show-count="false" data-dnt="true" data-show-screen-name="false">Follow @@PhillyVolley</a>&nbsp;</li>
-                    <li class="fb-like" data-href="https://www.facebook.com/PhiladelphiaVolleyball/" data-layout="button" data-action="like" data-size="large" data-show-faces="false" data-share="false"></li>
-                    <li><a class="btn btn-primary btn-sm" href="https://instagram.com/PhillyVolleyball"><i class="fa fa-instagram" aria-hidden="true"></i> Follow</a></li>
+                    <li><a class="btn btn-link btn-sm" href="https://instagram.com/PhillyVolleyball"><i class="fa fa-lg fa-instagram" aria-hidden="true"></i> Follow</a>&nbsp;</li>
+                    <li style="padding-top:3px;"><a class="twitter-follow-button" href="https://twitter.com/PhillyVolley" data-size="large" data-show-count="false" data-dnt="true" data-show-screen-name="false">Follow @@PhillyVolley</a>&nbsp;</li>
+                    <li style="padding-top:3px;" class="fb-like" data-href="https://www.facebook.com/PhiladelphiaVolleyball/" data-layout="button" data-action="like" data-size="large" data-show-faces="false" data-share="false"></li>
                 </ul>
             </div>
 
@@ -84,8 +92,8 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/4067c98c86.js"></script>
     <div id="fb-root"></div>
     <script>
@@ -114,6 +122,6 @@
             return t;
         }(document, "script", "twitter-wjs"));
     </script>
-    @RenderSection(name:"BodyClose", required:false)
+    @RenderSection(name: "BodyClose", required: false)
 </body>
 </html>
