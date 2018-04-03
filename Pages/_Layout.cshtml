@@ -39,10 +39,6 @@
     <script type="application/ld+json">
         {"@@context":"http://www.schema.org","@@type":"organization","name":"Philadelphia Volleyball","url":"http://PhiladelphiaVolleyball.com","logo":"http://philadelphiavolleyball.com/img/logo.png","image":"http://philadelphiavolleyball.com/img/logo.png","description":"We're a community of volunteers organizing weekly adult pickup volleyball in Philadelphia","address":{"addressLocality":"Philadelphia","@@type":"PostalAddress","addressRegion":"Pennsylvania","addressCountry":"United States","streetAddress":"1221 S Broad St Suite 607"},"contactPoint":{"telephone":"+1(419) 823-7326","@@type":"ContactPoint"}}
     </script>
-
-
-
-
     <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
@@ -50,6 +46,12 @@
     <link rel="shortcut icon" href="/img/favicon.ico">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <environment names="Staging,Production">
+        <script defer src="https://use.fontawesome.com/4067c98c86.js"></script>
+    </environment>
+    <environment names="Development">
+        <link href="~/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    </environment>
     <style>
         /* Show it is fixed to the top */
         body {
@@ -70,7 +72,6 @@
             box-shadow: 0px 3px 10px rgba(0,0,0,.25);
         }
     </style>
-    <script defer src="https://use.fontawesome.com/4067c98c86.js"></script>
     @RenderSection(name: "HeadClose", required: false)
 </head>
 <body>
@@ -101,7 +102,7 @@
                 </ul>
                 <ul class="navbar-nav">
                     <li>
-                        <a class="btn btn-link btn-sm" href="https://instagram.com/PhillyVolleyball"><i class="fab fa-instagram fa-lg" aria-hidden="true"></i> Follow</a>&nbsp;
+                        <a class="btn btn-link btn-sm" href="https://instagram.com/PhillyVolleyball"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i> Follow</a>&nbsp;
                     </li>
                     <li style="padding-top:3px;">
                         <a class="twitter-follow-button" href="https://twitter.com/PhillyVolley" data-size="large" data-show-count="false" data-dnt="true" data-show-screen-name="false">Follow @@PhillyVolley</a>&nbsp;
