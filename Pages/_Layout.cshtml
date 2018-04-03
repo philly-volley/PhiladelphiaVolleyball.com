@@ -70,6 +70,12 @@
             box-shadow: 0px 3px 10px rgba(0,0,0,.25);
         }
     </style>
+    <environment names="Development">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script defer src="https://use.fontawesome.com/4067c98c86.js"></script>
+    </environment>
     @RenderSection(name: "HeadClose", required: false)
 </head>
 <body>
@@ -94,31 +100,24 @@
                     <li asp-page="/FAQ" class="nav-item" is-active-page="">
                         <a asp-page="/FAQ" class="nav-link">FAQs</a>
                     </li>
+                    <li asp-page="/VolleyBRAWL" class="nav-item" is-active-page="">
+                        <a asp-page="/VolleyBRAWL" class="nav-link">VolleyBRAWL</a>
+                    </li>
                 </ul>
                 <ul class="navbar-nav">
-                    <li><a class="btn btn-link btn-sm" href="https://instagram.com/PhillyVolleyball"><i class="fa fa-lg fa-instagram" aria-hidden="true"></i> Follow</a>&nbsp;</li>
-                    <li style="padding-top:3px;"><a class="twitter-follow-button" href="https://twitter.com/PhillyVolley" data-size="large" data-show-count="false" data-dnt="true" data-show-screen-name="false">Follow @@PhillyVolley</a>&nbsp;</li>
+                    <li>
+                        <a class="btn btn-link btn-sm" href="https://instagram.com/PhillyVolleyball"><i class="fab fa-instagram fa-lg" aria-hidden="true"></i> Follow</a>&nbsp;
+                    </li>
+                    <li style="padding-top:3px;">
+                        <a class="twitter-follow-button" href="https://twitter.com/PhillyVolley" data-size="large" data-show-count="false" data-dnt="true" data-show-screen-name="false">Follow @@PhillyVolley</a>&nbsp;
+                    </li>
                     <li style="padding-top:3px;" class="fb-like" data-href="https://www.facebook.com/PhiladelphiaVolleyball/" data-layout="button" data-action="like" data-size="large" data-show-faces="false" data-share="false"></li>
                 </ul>
             </div>
 
         </div>
     </nav>
-    <div class="jumbotron bg-primary">
-        <div class="container" style="color: #cdbfe3;">
-            <div class="media">
-                <img class="d-none d-md-block mr-3 img-fluid" src="/img/logo.png" style="max-height:125px;">
-                <div class="media-body">
-                    <h1 class="display-3" style="color: #fff">Philadelphia Volleyball</h1>
-                    <p class="lead">We organize multiple pickup games every week in the greater Philadelphia area.</p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-
+    @RenderSection(name: "Jumbotron", required: false)
     <div class="container">
         @RenderBody()
     </div>
@@ -127,7 +126,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://use.fontawesome.com/4067c98c86.js"></script>
     <div id="fb-root"></div>
     <script>
         (function (d, s, id) {
