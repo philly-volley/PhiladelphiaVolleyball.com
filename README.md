@@ -1,5 +1,5 @@
 # PhiladelphiaVolleyball.com
-The web UI at PhiladelphiaVolleyball.com
+The web UI at [PhiladelphiaVolleyball.com](http://PhiladelphiaVolleyball.com)
 
 ## How to contribute
 
