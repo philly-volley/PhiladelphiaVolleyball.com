@@ -5,4 +5,4 @@ The web UI at PhiladelphiaVolleyball.com
 
 Contributions are quite welcome, though some rules should be followed!
 
-- [x] **Pull request** will only **accepted** from `/developement` branch
+- [x] **Pull request** will only **accepted** from `/development` branch
